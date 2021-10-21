@@ -31,21 +31,6 @@ class LoginViewController: UIViewController {
         
     }
     
-    private func showAlert(titel: String, message: String) {
-        let alert = UIAlertController(
-            title: titel,
-            message: message,
-            preferredStyle: .alert)
-        let alertOk = UIAlertAction(
-            title: "Ok",
-            style: .default) { _ in
-                self.labelPassword.text = ""
-            }
-        
-        alert.addAction(alertOk)
-        present(alert, animated: true)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard  let welcomeVC = segue.destination as? WelcomeViewController else  { return }
         welcomeVC.user = userName
@@ -69,18 +54,24 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for seque: UIStoryboardSegue) {
-        guard let welcomeVC = seque.source as? WelcomeViewController else  { return }
+//        guard let welcomeVC = seque.source as? WelcomeViewController else  { return }
         labelPassword.text = ""
         labelUserName.text = ""
     }
     
-    
-//    @IBAction func forgotUserNamePressed() {
-//        showAlert(titel: "Alert", message: "Your name is: \(userName)")
-//    }
-//    @IBAction func forgotPasswordPressed() {
-//        showAlert(titel: "Alert", message: "Your password is: \(password)")
-//    }
-    
+    private func showAlert(titel: String, message: String) {
+        let alert = UIAlertController(
+            title: titel,
+            message: message,
+            preferredStyle: .alert)
+        let alertOk = UIAlertAction(
+            title: "Ok",
+            style: .default) { _ in
+                self.labelPassword.text = ""
+            }
+        
+        alert.addAction(alertOk)
+        present(alert, animated: true)
+    }
 }
 
