@@ -36,7 +36,7 @@
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <action selector="loginPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="NrL-Qt-Nnh"/>
-                                            <segue destination="jUa-Ju-DxJ" kind="presentation" id="xjo-Pe-IxO"/>
+                                            <segue destination="jUa-Ju-DxJ" kind="presentation" modalPresentationStyle="fullScreen" id="xjo-Pe-IxO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -95,17 +95,17 @@
             <objects>
                 <viewController id="jUa-Ju-DxJ" customClass="WelcomeViewController" customModule="LoginUserPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hNP-eE-aK6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-7r-rI4">
-                                <rect key="frame" x="181" y="265" width="52" height="27"/>
+                                <rect key="frame" x="181" y="309" width="52" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWz-sN-xLY">
-                                <rect key="frame" x="165.5" y="687" width="83" height="41"/>
+                                <rect key="frame" x="165.5" y="741" width="83" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Log Out">
